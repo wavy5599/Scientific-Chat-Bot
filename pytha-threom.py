@@ -1,6 +1,35 @@
 import math
 import time
 
+def chat():
+    greeting = "Hello there what would you like to do today?"
+    print(greeting)
+    response = input("Please let me know what you would like to do: \n\n")
+
+    if response == "Lets do pythagorean theorem" or response == "Let's do py theorem" or response == "pyth theorem" or response == "Let's do pythagorean theorem!":
+        print("Lets do pythagorean theorem")
+        pytha_threom()
+        
+    elif response == "Lets do foil" or response == "Let's do foil" or response == "foil":
+        print("Let's do the FOIL method!")
+        foil()
+    
+    elif response == "Lets do polynomals" or response == "Let's do polynomials" or response == "polynomials":
+        print("Let's work with polynomials!")
+        polynomial()
+        
+    elif response == "exit" or response == "quit":
+        print("Goodbye! Have a great day!")
+        return
+    else:
+        print("I am not sure what you mean, but I am here to help with math!")
+    
+    
+chat()
+
+
+
+
 def polynomial():
     
     print("Let's work with polynomials!")
@@ -77,26 +106,3 @@ def foil():
 
 
 
-def chat():
-    greeting = "Hello there what would you like to do today?"
-    print(greeting)
-    response = input("Please let me know what you would like to do: \n\n")
-
-    if response == "Lets do pythagorean theorem" or response == "Let's do py theorem" or response == "pyth theorem" or response == "Let's do pythagorean theorem!":
-        print("Lets do pythagorean theorem")
-        pytha_threom()
-        
-    elif response == "Lets do foil" or response == "Let's do foil" or response == "foil":
-        print("Let's do the FOIL method!")
-        foil()
-    
-    elif response == "Lets do polynomals" or response == "Let's do polynomials" or response == "polynomials":
-        print("Let's work with polynomials!")
-        polynomial()
-        
-    
-    else:
-        print("I am not sure what you mean, but I am here to help with math!")
-    
-    
-chat()
